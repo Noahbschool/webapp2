@@ -16,7 +16,7 @@ include("./dbcalls/conn.php");
     <header>
     </header>
     <main>
-    <h1>test</h1>
+    
     </main>
 </body>
 
