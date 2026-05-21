@@ -10,19 +10,25 @@
 
 <main class="overons-container">
 
-  <div class="overons-title">Over Ons</div>
+  <div class="overons-title">Over Ons - Nreizen</div>
 
-  <div>
-    Bij Nreizen staan wij voor kwaliteit en service. Al jaren organiseren wij de mooiste zon- en strandvakanties op maat voor onze klanten. Of je nu wilt ontspannen aan het strand of genieten van de zon, wij regelen het voor je.
-  </div>
+  <section class="overons-block">
+    <div>
+      Bij Nreizen staan wij voor kwaliteit en service. Al jaren organiseren wij de mooiste zon- en strandvakanties op maat voor onze klanten. Of je nu wilt ontspannen aan het strand of genieten van de zon, wij regelen het voor je.
+    </div>
+  </section>
 
-  <div>
-    Onze ervaren reisexperts helpen je graag met persoonlijk advies en de beste deals. Zo wordt jouw reis altijd een succes!
-  </div>
+  <section class="overons-block">
+    <div>
+      Onze ervaren reisexperts helpen je graag met persoonlijk advies en de beste deals. Zo wordt jouw reis altijd een succes!
+    </div>
+  </section>
 
-  <div>
-    Heb je vragen? Neem contact met ons op via de contactpagina. We staan klaar om je te helpen!
-  </div>
+  <section class="overons-block">
+    <div>
+      Heb je vragen? Neem contact met ons op via de contactpagina. We staan klaar om je te helpen!
+    </div>
+  </section>
 
 </main>
     
