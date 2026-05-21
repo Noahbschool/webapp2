@@ -1,3 +1,8 @@
+<?php
+include("./dbcalls/conn.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

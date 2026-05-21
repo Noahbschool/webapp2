@@ -46,3 +46,68 @@
     flex-direction: column;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.privacybeleid-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.privacy-title {
+    text-align: center;
+    font-size: 28px;
+    color: #0077cc;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.subtitle-privacy {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #005fa3;
+}
+
+.privacy-block {
+    margin-bottom: 15px;
+}
+
+.facts-list {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.facts-list div {
+    margin-bottom: 5px;
+}
+
+.overons-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.overons-title {
+    text-align: center;
+    font-size: 28px;
+    color: #0077cc;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.overons-block {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
