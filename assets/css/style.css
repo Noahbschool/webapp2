@@ -63,3 +63,48 @@ body {
     margin-bottom: 15px;
     line-height: 1.6;
 }
+
+.contact-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 28px;
+    color: #0077cc;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-block {
+    margin-bottom: 20px;
+}
+
+.contact-subtitle {
+    font-weight: bold;
+    color: #005fa3;
+    margin-bottom: 10px;
+}
+
+.phone-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0077cc;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-text {
+    margin-bottom: 10px;
+}
+
+.language-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
