@@ -9,7 +9,7 @@ include("./dbcalls/conn.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>N-reizen</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -22,14 +22,23 @@ include("./dbcalls/conn.php");
         </div>
     </header>
     <main>
-        <section>
-            <img src="assets/img/background-homepage.jpg" alt="background" width="100%">
+        <section class="landingspagina">
 
-            <div class="search-box">
-                <h1>Jouw vakantie</h1>
+            <form action="" method="" class="search-box">
+                <label>Jouw vakantie</label>
+                <label for="aantal-personen">Aantal personen</label>
+                <input type="number" name="aantal-personen" id="aantal-personen" placeholder="Aantal personen" min="1"
+                    max="8">
+                <label class="search-box-text" for="bestemming">Bestemming</label>
+                <input type="text" id="bestemming">
+                <label class="search-box-text" for="datum-trip">Datum van trip</label>
+                <input type="date" id="datum-trip">
+                <label class="search-box-text" for="reisduur">Reisduur</label>
+                <input type="text" id="reisduur">
 
-                <h2>Aantal mensen</h2>
-            </div>
+                <input type="submit" value="Vind jouw vakantie">
+            </form>
+
         </section>
     </main>
     <script src="assets/js/index.js"></script>
