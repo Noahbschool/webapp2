@@ -13,12 +13,14 @@ include("../dbcalls/conn.php");
 </head>
 
 <body>
-    <header class="middle-blue header font-inter-white">
-        <img class="logo" src="../assets/img/placeholder-300x300.png" alt="logo">
-        <div class="header-buttons">
-            <h2>Contact</h2>
-            <h2>Log in</h2>
-        </div>
+    <header class="header">
+        <a href="./index.php"><img class="logo" src="./assets/img/n-reizen-logo.png" alt="logo"></a>
+        <nav class="header-buttons">
+            <ul>
+                <li><a href="pages/contact.php">Contact</a></li>
+                <li><a href="pages/login-register.php">Log in</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="login-register" class="landingspagina">
