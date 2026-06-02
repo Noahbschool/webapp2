@@ -28,34 +28,11 @@
 
 </header>
 
+<main class="add-container"> 
 
-<div class="card-container">
+<h1>Reis toevoegen</h1>
 
-<div class="reis-card">
-
-    <img src="/assets/img/placeholder-300x300.png" class="card-img" alt="hotel">
-
-    <div class="card-info">
-
-        <div class="card-title">Boutique Hotel Herman K ⭐⭐⭐⭐⭐</div>
-
-        <div class="card-text">1 nacht • 2 volwassenen</div>
-
-        <div class="card-price">€ 391</div>
-
-        <div class="card-small">inclusief belastingen en toeslagen</div>
-
-        <div class="card-buttons">
-            <a href="view.php" class="button-view">Bekijken</a>
-            <a href="edit.php" class="button-edit">Bewerken</a>
-            <a href="delete.php" class="button-delete">Verwijderen</a>
-        </div>
-
-    </div>
-
-
-
-<form action="#">
+<form method="post" action="/dbcalls/create.php" class="add-form">
 
 <label>Titel</label>
     <input type="text" name="titel" required><br>
@@ -87,8 +64,7 @@
     <label>Afbeelding 5</label>
     <input type="text" name="afbeelding5"><br>
 
-    
-    <div>(ja/nee)</div>
+    <h3>(ja/nee)</h3><br>
     
     <label>Ontbijt</label>
     <input type="text" name="ontbijt"><br>
@@ -114,11 +90,13 @@
     <label>Volledige Beschrijving</label><br>
     <textarea name="beschrijving_lang" rows="5"></textarea><br>
 
-    <button type="submit" class="admin-button">Toevoegen</button>
-
+    <div class="form-actions">
+        <button type="submit" name="toevoegen" class="add-button">Toevoegen</button>
+        <a href="/pages/admin-pannel.php" class="back-button">Terug</a>
+    </div>
 
 </form>
-
+</main>
 
 
 </body>
