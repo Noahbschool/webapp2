@@ -14,33 +14,57 @@ include("./dbcalls/conn.php");
 </head>
 
 <body>
-    <header class="middle-blue header font-inter-white">
-        <img class="logo" src="./assets/img/placeholder-300x300.png" alt="logo">
-        <div class="header-buttons">
-            <h2>Contact</h2>
-            <h2>Log in</h2>
-        </div>
+    <header class="header">
+        <a href="./index.php"><img class="logo" src="./assets/img/n-reizen-logo.png" alt="logo"></a>
+        <nav class="header-buttons">
+            <ul>
+                <li><a href="pages/contact.php">Contact</a></li>
+                <li><a href="pages/login-register.php">Log in</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="landingspagina">
 
-            <form action="" method="" class="search-box">
-                <label>Jouw vakantie</label>
+            <form action="" method="post" class="search-box">
+                <h2>Jouw vakantie</h2>
                 <label for="aantal-personen">Aantal personen</label>
                 <input type="number" name="aantal-personen" id="aantal-personen" placeholder="Aantal personen" min="1"
                     max="8">
                 <label class="search-box-text" for="bestemming">Bestemming</label>
                 <input type="text" id="bestemming">
                 <label class="search-box-text" for="datum-trip">Datum van trip</label>
-                <input type="date" id="datum-trip">
+                <input type="date" id="datum-trip" min="2026-05-28">
                 <label class="search-box-text" for="reisduur">Reisduur</label>
                 <input type="text" id="reisduur">
 
-                <input type="submit" value="Vind jouw vakantie">
+                <input class="vind-jouw-vakantie" type="submit" value="Vind jouw vakantie">
             </form>
 
         </section>
+
+
+        <section class="voorgestelde-reizen">
+            <h1>Onze voorgestelde reizen</h1>
+            <div class="voorgestelde-reizen-box-row">
+                <div class="voorgestelde-reis"></div>
+                <div class="voorgestelde-reis"></div>
+                <div class="voorgestelde-reis"></div>
+            </div>
+
+
+            <a href="pages/reizen" class="bekijk-alle-reizen-button">Bekijk alle reizen</a>
+        </section>
     </main>
+    <footer class="footer">
+        <img class="logo-footer" src="./assets/img/n-reizen-logo.png" alt="logo">
+
+        <ul>
+            <li><a href="pages/algemene-voorwaarden.php">Algemene voorwaarden</a></li>
+            <li><a href="pages/privacy-policy.php">Privacy policy</a></li>
+            <li><a href="pages/over-ons.php">Over ons</a></li>
+        </ul>
+    </footer>
     <script src="assets/js/index.js"></script>
 </body>
 
