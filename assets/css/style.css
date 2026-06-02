@@ -4,20 +4,13 @@
     box-sizing: border-box;
 }
 
-.middle-blue {
-    background-color: #378ADD;
-}
-
-.font-inter-white {
-    color: white;
-}
-
 .header {
     width: 100%;
     height: 11vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #378ADD;
 }
 
 .header-buttons {
@@ -30,29 +23,121 @@
     height: 100px;
 }
 
+.header-buttons ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
 .logo {
-    width: 100px;
-    height: 50px;
+    width: 150px;
     margin: 10px;
 }
 
-.landingspagina{
+.landingspagina {
     background-image: url(".././img/background-homepage.jpg");
     width: 100%;
     height: 89vh;
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-.search-box{
+
+.search-box {
     background-color: #B5D4F4;
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: 40px;
     width: 300px;
-    height: 500px;
+}
+
+.search-box input {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.search-box button {
+    color: white;
     border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+
+.vind-jouw-vakantie {
+    background-color: #EF9F27;
+}
+
+.voorgestelde-reizen {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.voorgestelde-reis {
+    border: black 1px solid;
+    border-radius: 15px;
+    width: 25%;
+    height: 350px;
+}
+
+.voorgestelde-reizen-box-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.bekijk-alle-reizen-button {
+    background-color: white;
+    color: #378ADD;
+    border: 2px solid #378ADD;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer{
+    background-color: #378ADD;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.logo-footer{
+    width: 300px;
+    margin-left: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
 }
 
 body {
@@ -119,6 +204,7 @@ body {
 .overons-block {
     margin-bottom: 15px;
     line-height: 1.6;
+}
 }
 
 #login-register {
