@@ -221,8 +221,8 @@ body {
 
 .login-signup-box {
     display: flex;
-    width: 450px;
-    height: 600px;
+    width: 29%;
+    height: 90%;
     background-color: #E6F1FB;
     border: 2px solid #185FA5;
     margin: 30px 30px 0px 30px;
@@ -310,4 +310,210 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
+}
+
+.header-admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.reis-card {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.card-img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.card-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-small {
+    font-size: 12px;
+    color: gray;
+}
+
+.card-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.button-view {
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background-color: #1e88e5;
+}
+
+.button-edit {
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background-color: #ffa000;
+}
+
+.button-delete {
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background-color: #e53935;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.button-toevoegen a {
+    text-decoration: none;
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 6px;
+}
+
+.text-admin {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.admin-button {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.admin-button a {
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background-color: #1e88e5;
+}
+
+
+
+.add-button,
+.back-button{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #1e88e5;
+    color: #fff;
+    border: 0;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: transform 0.15s ease;
+    transform-origin: center;
+}
+
+
+.form-actions{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.add-container {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: left;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+}
+
+
+.add-form label {
+    display: block;
+    margin: 6px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-form input,
+.add-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
