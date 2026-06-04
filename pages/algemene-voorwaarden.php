@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="././index.php"><img class="logo" src="../assets/img/n-reizen-logo.png" alt="logo"></a>
+    <header>
+        <a href="../index.php"><img class="logo" src="../assets/img/n-reizen-logo.png" alt="logo"></a>
         <nav class="header-buttons">
             <ul>
                 <li><a href="contact.php">Contact</a></li>
@@ -91,7 +91,15 @@
             </section>
 
         </main>
+        <footer>
+            <img class="logo-footer" src="../assets/img/n-reizen-logo.png" alt="logo">
 
+            <ul>
+                <li><a href="algemene-voorwaarden.php">Algemene voorwaarden</a></li>
+                <li><a href="privacy-policy.php">Privacy policy</a></li>
+                <li><a href="over-ons.php">Over ons</a></li>
+            </ul>
+        </footer>
 </body>
 
 </html>
