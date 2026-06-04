@@ -14,7 +14,7 @@ include("../dbcalls/conn.php");
 
 <body>
     <header class="header">
-        <a href="./index.php"><img class="logo" src="../assets/img/n-reizen-logo.png" alt="logo"></a>
+        <a href=".././index.php"><img class="logo" src="../assets/img/n-reizen-logo.png" alt="logo"></a>
         <nav class="header-buttons">
             <ul>
                 <li><a href="contact.php">Contact</a></li>
