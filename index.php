@@ -14,7 +14,7 @@ include("./dbcalls/conn.php");
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <a href="./index.php"><img class="logo" src="./assets/img/n-reizen-logo.png" alt="logo"></a>
         <nav class="header-buttons">
             <ul>
@@ -31,18 +31,16 @@ include("./dbcalls/conn.php");
                 <label for="aantal-personen">Aantal personen</label>
                 <input type="number" name="aantal-personen" id="aantal-personen" placeholder="Aantal personen" min="1"
                     max="8">
-                <label class="search-box-text" for="bestemming">Bestemming</label>
+                <label for="bestemming">Bestemming</label>
                 <input type="text" id="bestemming">
-                <label class="search-box-text" for="datum-trip">Datum van trip</label>
+                <label for="datum-trip">Datum van trip</label>
                 <input type="date" id="datum-trip" min="2026-05-28">
-                <label class="search-box-text" for="reisduur">Reisduur</label>
+                <label for="reisduur">Reisduur</label>
                 <input type="text" id="reisduur">
 
                 <input class="vind-jouw-vakantie" type="submit" value="Vind jouw vakantie">
             </form>
-
         </section>
-
 
         <section class="voorgestelde-reizen">
             <h1>Onze voorgestelde reizen</h1>
@@ -52,11 +50,10 @@ include("./dbcalls/conn.php");
                 <div class="voorgestelde-reis"></div>
             </div>
 
-
-            <a href="pages/reizen" class="bekijk-alle-reizen-button">Bekijk alle reizen</a>
+            <a href="pages/reizen.php" class="bekijk-alle-reizen-button">Bekijk alle reizen</a>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <img class="logo-footer" src="./assets/img/n-reizen-logo.png" alt="logo">
 
         <ul>
