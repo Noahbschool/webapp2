@@ -1,7 +1,7 @@
 <?php
 include("../conn.php");
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $useremail = $_POST["useremail"];
     $userpassword = $_POST["userpassword"];
     $password_confirm = $_POST["password_confirm"];
@@ -28,5 +28,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'Failed password check';
     }
     header('location: ../../pages/login-register.php');
-
-}

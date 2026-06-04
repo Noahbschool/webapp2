@@ -213,8 +213,8 @@ body {
 
 .login-signup-box {
     display: flex;
-    width: 450px;
-    height: 600px;
+    width: 29%;
+    height: 90%;
     background-color: #E6F1FB;
     border: 2px solid #185FA5;
     margin: 30px 30px 0px 30px;

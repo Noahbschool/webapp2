@@ -2,32 +2,25 @@
 session_start();
 include("../conn.php");
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $useremail = $_POST["useremail"];
-    $userpassword = $_POST["userpassword"];
 
-    $sql = "SELECT * FROM users WHERE useremail = :useremail";
+$useremail = $_POST["useremail"];
+$userpassword = $_POST["userpassword"];
 
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':useremail', $useremail);
-    $stmt->execute();
-    $user = $stmt->fetch();
-    if ($user) {
-        if ($userpassword == $user['userpassword']) {
-            
-            $_SESSION['userrole'] = $user['userrole'];
+$sql = "SELECT * FROM users WHERE useremail = :useremail";
 
-           if ($user['userrole'] === 'admin'){
-            $adminredirect = '../../pages/admin-pannel.php';
-           } else {
-            $adminredirect = '../../index.php';
-            };
+$stmt = $conn->prepare($sql);
+$stmt->bindParam(':useremail', $useremail);
+$stmt->execute();
+$user = $stmt->fetch();
 
-            header('location: '. $adminredirect);
-        } else {
-            echo 'Wrong User Details';
-        }
-    } else {
-        echo 'Wrong User Details';
-    }
+if ($user){
+   if ($user['userrole'] == 'admin' && $user['userpassword'] == $userpassword) {
+    header('location: ../../pages/admin-pannel.php');
+} else if ($user['userrole'] == 'klant' && $user['userpassword'] == $userpassword) {
+    header('location: ../../index.php');
+} else {
+    echo 'Wrong user details';
+}
+}  else {
+    echo'Wrong user details';
 }
