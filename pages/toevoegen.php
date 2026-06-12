@@ -1,103 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reis toevoegen</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
 
-<header class="header-admin">
+    <header>
+        <a href="../index.php"><img class="logo" src="../assets/img/n-reizen-logo.png" alt="logo"></a>
+        <nav class="header-buttons">
+            <ul>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="login-register.php">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="logo">
-        <img src="../assets/img/placeholder-300x300.png">
-        <div class="logo-text">N-reizen</div>
-    </div>
+    <main class="add-container">
 
-    <nav class="navigation">
-        <a href="index.php">Home</a>
-        <a href="">Bestemmingen</a>
-        <a href="over-ons.php">Over ons</a>
-        <a href="contact.php">Contact</a>
-    </nav>
+        <h1>Reis toevoegen</h1>
 
-    <div class="button-toevoegen">
-        <a href="toevoegen.php">toevoegen</a>
-    </div>
+        <form method="post" action="/dbcalls/create.php" class="add-form">
 
-</header>
+            <label>Titel</label>
+            <input type="text" name="titel" required><br>
 
-<main class="add-container"> 
+            <label>Locatie</label>
+            <input type="text" name="locatie" required><br>
 
-<h1>Reis toevoegen</h1>
+            <label>Prijs</label>
+            <input type="number" name="prijs" step="0.01" required><br>
 
-<form method="post" action="/dbcalls/create.php" class="add-form">
+            <label>Luchthaven</label>
+            <input type="text" name="luchthaven"><br>
 
-<label>Titel</label>
-    <input type="text" name="titel" required><br>
+            <label>Locatie link</label>
+            <input type="text" name="locatie_link"><br>
 
-    <label>Locatie</label>
-    <input type="text" name="locatie" required><br>
+            <label>Afbeelding 1</label>
+            <input type="text" name="afbeelding"><br>
 
-    <label>Prijs</label>
-    <input type="number" name="prijs" step="0.01" required><br>
+            <label>Afbeelding 2</label>
+            <input type="text" name="afbeelding2"><br>
 
-    <label>Luchthaven</label>
-    <input type="text" name="luchthaven"><br>
+            <label>Afbeelding 3</label>
+            <input type="text" name="afbeelding3"><br>
 
-    <label>Locatie link</label>
-    <input type="text" name="locatie_link"><br>
+            <label>Afbeelding 4</label>
+            <input type="text" name="afbeelding4"><br>
 
-    <label>Afbeelding 1</label>
-    <input type="text" name="afbeelding"><br>
+            <label>Afbeelding 5</label>
+            <input type="text" name="afbeelding5"><br>
 
-    <label>Afbeelding 2</label>
-    <input type="text" name="afbeelding2"><br>
+            <h3>(ja/nee)</h3><br>
 
-    <label>Afbeelding 3</label>
-    <input type="text" name="afbeelding3"><br>
+            <label>Ontbijt</label>
+            <input type="text" name="ontbijt"><br>
 
-    <label>Afbeelding 4</label>
-    <input type="text" name="afbeelding4"><br>
+            <label>Wifi</label>
+            <input type="text" name="wifi"><br>
 
-    <label>Afbeelding 5</label>
-    <input type="text" name="afbeelding5"><br>
+            <label>Zwembad</label>
+            <input type="text" name="zwembad"><br>
 
-    <h3>(ja/nee)</h3><br>
-    
-    <label>Ontbijt</label>
-    <input type="text" name="ontbijt"><br>
+            <label>Restaurant</label>
+            <input type="text" name="restaurant"><br>
 
-    <label>Wifi</label>
-    <input type="text" name="wifi"><br>
+            <label>Wellness</label>
+            <input type="text" name="wellness"><br>
 
-    <label>Zwembad</label>
-    <input type="text" name="zwembad"><br>
+            <label>Badkamer</label>
+            <input type="text" name="badkamer"><br>
 
-    <label>Restaurant</label>
-    <input type="text" name="restaurant"><br>
+            <label>Huisdieren toegestaan</label>
+            <input type="text" name="huisdieren"><br>
 
-    <label>Wellness</label>
-    <input type="text" name="wellness"><br>
+            <label>Volledige Beschrijving</label><br>
+            <textarea name="beschrijving_lang" rows="5"></textarea><br>
 
-    <label>Badkamer</label>
-    <input type="text" name="badkamer"><br>
+            <div class="form-actions">
+                <button type="submit" name="toevoegen" class="add-button">Toevoegen</button>
+                <a href="/pages/admin-pannel.php" class="back-button">Terug</a>
+            </div>
 
-    <label>Huisdieren toegestaan</label>
-    <input type="text" name="huisdieren"><br>
-    
-    <label>Volledige Beschrijving</label><br>
-    <textarea name="beschrijving_lang" rows="5"></textarea><br>
-
-    <div class="form-actions">
-        <button type="submit" name="toevoegen" class="add-button">Toevoegen</button>
-        <a href="/pages/admin-pannel.php" class="back-button">Terug</a>
-    </div>
-
-</form>
-</main>
+        </form>
+    </main>
 
 
 </body>
+
 </html>
