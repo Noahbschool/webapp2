@@ -119,6 +119,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
+    
 }
 
 .logo-footer {
@@ -504,8 +505,6 @@ body {
     background-color: #1e88e5;
 }
 
-
-
 .add-button,
 .back-button {
     display: block;
@@ -541,7 +540,6 @@ body {
     border-radius: 15px;
 }
 
-
 .add-form label {
     display: block;
     margin: 6px 0;
@@ -558,4 +556,98 @@ body {
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 16px;
+}
+.reizen-layout{
+    display: flex;
+    width: 100%;
+}
+.reizen-cards{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 1.9%;
+    width: 50%;
+}
+
+.reizen-cards div {
+    margin-top: 1.9%;
+    width: 100%;
+}
+
+.reizen-cards h2{
+font-size: xx-large;
+}
+
+.reis-card-overzicht{
+    display: flex;
+    width: 100%;
+    min-height: 20pc;
+    margin-bottom: 20px;
+    background-color: #E6F1FB;
+
+    border-radius: 20px;
+    border: #185FA5 2px solid;
+}
+
+.reis-card-image{
+    width: 163px;
+    height: 163px;
+    display: flex;
+    align-self: center;
+}
+
+.reis-card-name{
+    margin-top: 7%;
+}
+.reis-card-left-side{
+    align-self: center;
+}
+
+.reis-card-middle-part{
+    margin-left: auto;
+    margin-top: 10%;
+}
+
+.reis-card-middle-part-name-and-star{
+    display: flex;
+    flex-direction: row;
+
+}
+.reis-card-land{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.reis-card-sterren{
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.reis-card-right-side{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    position: relative;
+    
+}
+.reis-card-price{
+    font-size: x-large;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.reis-card-card-button{
+    width: 100%;
+    height: 3pc;
+    align-self: flex-end;
+    margin-top: 10%;
+    margin-right: 20px;
+}
+
+.reizen-cards .vind-jouw-vakantie{
+    border-radius: 10px;
+    color: white;
+    border: none;
 }

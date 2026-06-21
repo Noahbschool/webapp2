@@ -44,43 +44,11 @@
             <label>Afbeelding 1</label>
             <input type="text" name="afbeelding"><br>
 
-            <label>Afbeelding 2</label>
-            <input type="text" name="afbeelding2"><br>
-
-            <label>Afbeelding 3</label>
-            <input type="text" name="afbeelding3"><br>
-
-            <label>Afbeelding 4</label>
-            <input type="text" name="afbeelding4"><br>
-
-            <label>Afbeelding 5</label>
-            <input type="text" name="afbeelding5"><br>
-
-            <h3>(ja/nee)</h3><br>
-
-            <label>Ontbijt</label>
-            <input type="text" name="ontbijt"><br>
-
-            <label>Wifi</label>
-            <input type="text" name="wifi"><br>
-
-            <label>Zwembad</label>
-            <input type="text" name="zwembad"><br>
-
-            <label>Restaurant</label>
-            <input type="text" name="restaurant"><br>
-
-            <label>Wellness</label>
-            <input type="text" name="wellness"><br>
-
-            <label>Badkamer</label>
-            <input type="text" name="badkamer"><br>
-
-            <label>Huisdieren toegestaan</label>
-            <input type="text" name="huisdieren"><br>
-
-            <label>Volledige Beschrijving</label><br>
-            <textarea name="beschrijving_lang" rows="5"></textarea><br>
+    <label>Afbeelding 1</label>
+    <input type="text" name="afbeelding"><br>
+    
+    <label>Volledige Beschrijving</label><br>
+    <textarea name="beschrijving_lang" rows="5"></textarea><br>
 
             <div class="form-actions">
                 <button type="submit" name="toevoegen" class="add-button">Toevoegen</button>
