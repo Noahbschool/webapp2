@@ -90,7 +90,7 @@ header {
     border: black 1px solid;
     border-radius: 15px;
     width: 25%;
-    height: 350px;
+    height: 40vh;
 }
 
 .voorgestelde-reizen-box-row {
@@ -147,7 +147,48 @@ footer a {
     height: 100vh;
     margin: 15px;
     border-radius: 25px;
-    
+}
+
+.search-filter-reizen-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-filter-reizen-page h3{
+    margin-top: 10px;
+}
+
+.input-box-search-filter {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: #185FA5 solid 2px;
+    margin: 10px 0px 0px 20px;
+}
+
+.bestemming-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#bestemming-tag {
+    margin: 20px 0px 0px 20px;
+}
+
+.search-filter-submit-button {
+    display: flex;
+    background-color: #EF9F27;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 15px 0 auto;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.search-filter-submit-button:hover{
+    scale: 1.05;
 }
 
 body {
@@ -319,7 +360,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
@@ -465,7 +506,7 @@ body {
 }
 
 .add-button,
-.back-button{
+.back-button {
     display: block;
     width: 100%;
     text-align: center;
@@ -482,7 +523,8 @@ body {
     transform-origin: center;
 }
 
-.form-actions{
+
+.form-actions {
     margin-top: 12px;
     display: flex;
     flex-direction: column;
