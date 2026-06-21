@@ -44,25 +44,19 @@
             <label>Afbeelding 1</label>
             <input type="text" name="afbeelding"><br>
 
-            <label>Afbeelding 2</label>
-            <input type="text" name="afbeelding2"><br>
-
-            <label>Afbeelding 3</label>
-            <input type="text" name="afbeelding3"><br>
-
     <label>Afbeelding 1</label>
     <input type="text" name="afbeelding"><br>
     
     <label>Volledige Beschrijving</label><br>
     <textarea name="beschrijving_lang" rows="5"></textarea><br>
 
-    <div class="form-actions">
-        <button type="submit" name="toevoegen" class="add-button">Toevoegen</button>
-        <a href="/pages/admin-pannel.php" class="back-button">Terug</a>
-    </div>
+            <div class="form-actions">
+                <button type="submit" name="toevoegen" class="add-button">Toevoegen</button>
+                <a href="/pages/admin-pannel.php" class="back-button">Terug</a>
+            </div>
 
-</form>
-</main>
+        </form>
+    </main>
 
 
 </body>
