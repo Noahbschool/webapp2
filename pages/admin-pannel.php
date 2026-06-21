@@ -10,24 +10,14 @@
 
 <body>
 
-    <header class="header-admin">
-
-        <div class="logo">
-            <img src="../assets/img/placeholder-300x300.png">
-            <div class="logo-text">N-reizen</div>
-        </div>
-
-        <nav class="navigation">
-            <a href="index.php">Home</a>
-            <a href="">Bestemmingen</a>
-            <a href="over-ons.php">Over ons</a>
-            <a href="contact.php">Contact</a>
+    <header>
+        <a href="../index.php"><img class="logo" src="../assets/img/n-reizen-logo.png" alt="logo"></a>
+        <nav class="header-buttons">
+            <ul>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="login-register.php">Log in</a></li>
+            </ul>
         </nav>
-
-        <div class="button-toevoegen">
-            <a href="toevoegen.php">toevoegen</a>
-        </div>
-
     </header>
 
     <div class="text-admin">

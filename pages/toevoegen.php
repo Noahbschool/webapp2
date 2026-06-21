@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reis toevoegen</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
 
-<header class="header-admin">
+    <header>
+        <a href="../index.php"><img class="logo" src="../assets/img/n-reizen-logo.png" alt="logo"></a>
+        <nav class="header-buttons">
+            <ul>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="login-register.php">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="logo">
-        <img src="../assets/img/placeholder-300x300.png">
-        <div class="logo-text">N-reizen</div>
-    </div>
+    <main class="add-container">
 
-    <nav class="navigation">
-        <a href="index.php">Home</a>
-        <a href="">Bestemmingen</a>
-        <a href="over-ons.php">Over ons</a>
-        <a href="contact.php">Contact</a>
-    </nav>
+        <h1>Reis toevoegen</h1>
 
-    <div class="button-toevoegen">
-        <a href="toevoegen.php">toevoegen</a>
-    </div>
+        <form method="post" action="/dbcalls/create.php" class="add-form">
 
-</header>
+            <label>Titel</label>
+            <input type="text" name="titel" required><br>
 
-<main class="add-container"> 
+            <label>Locatie</label>
+            <input type="text" name="locatie" required><br>
 
-<h1>Reis toevoegen</h1>
+            <label>Prijs</label>
+            <input type="number" name="prijs" step="0.01" required><br>
 
-<form method="post" action="/dbcalls/create.php" class="add-form">
+            <label>Luchthaven</label>
+            <input type="text" name="luchthaven"><br>
 
-<label>Titel</label>
-    <input type="text" name="titel" required><br>
+            <label>Locatie link</label>
+            <input type="text" name="locatie_link"><br>
 
-    <label>Locatie</label>
-    <input type="text" name="locatie" required><br>
+            <label>Afbeelding 1</label>
+            <input type="text" name="afbeelding"><br>
 
-    <label>Prijs</label>
-    <input type="number" name="prijs" step="0.01" required><br>
+            <label>Afbeelding 2</label>
+            <input type="text" name="afbeelding2"><br>
 
-    <label>Luchthaven</label>
-    <input type="text" name="luchthaven"><br>
+            <label>Afbeelding 3</label>
+            <input type="text" name="afbeelding3"><br>
 
     <label>Afbeelding 1</label>
     <input type="text" name="afbeelding"><br>
@@ -62,4 +66,5 @@
 
 
 </body>
+
 </html>
