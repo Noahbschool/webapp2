@@ -79,7 +79,7 @@
                                 <p><?php echo $reis['reisluchthaven'] ?></p>
                                 <p><?php echo $reis['reispersonen'] ?></p>
                                 <p><?php echo $reis['reisduur'] ?></p>
-                                 <button class="reis-card-card-button vind-jouw-vakantie">In winkelwagen</button>
+                                 <input value="In winkelwagen" type="submit" class="reis-card-card-button vind-jouw-vakantie"></input>
                             </div>
                                
                         </div>
