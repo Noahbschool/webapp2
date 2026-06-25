@@ -24,31 +24,43 @@
 
         <h1>Reis toevoegen</h1>
 
-        <form method="post" action="/dbcalls/create.php" class="add-form">
+        <form method="post" action="../dbcalls/reizen/create.php" class="add-form">
 
-            <label>Titel</label>
-            <input type="text" name="titel" required><br>
+            <label>Reisnaam</label>
+            <input type="text" name="reisnaam" required><br>
 
-            <label>Locatie</label>
-            <input type="text" name="locatie" required><br>
+            <label>Reisfoto</label>
+            <input type="text" name="reisfoto" required><br>
+
+            <label>Sterren</label>
+            <input type="number" name="reissterren" min="1" max="5" required><br>
+
+            <label>Reisland</label>
+            <input type="text" name="reisland" required><br>
 
             <label>Prijs</label>
-            <input type="number" name="prijs" step="0.01" required><br>
+            <input type="number" name="reisprijs" required><br>
+
+            <label>Vertrekdatum</label>
+            <input type="date" name="reisvertrekdatum" required><br>
+
+            <label>Reisduur</label>
+            <input type="number" name="reisduur" required><br>
 
             <label>Luchthaven</label>
-            <input type="text" name="luchthaven"><br>
+            <input type="text" name="reisluchthaven" required><br>
 
-            <label>Locatie link</label>
-            <input type="text" name="locatie_link"><br>
+            <label>Type vlucht</label>
+            <input type="text" name="reistype_vlucht" required><br>
 
-            <label>Afbeelding 1</label>
-            <input type="text" name="afbeelding"><br>
+            <label>Type verblijf</label>
+            <input type="text" name="reistype_verblijf" required><br>
 
-    <label>Afbeelding 1</label>
-    <input type="text" name="afbeelding"><br>
-    
-    <label>Volledige Beschrijving</label><br>
-    <textarea name="beschrijving_lang" rows="5"></textarea><br>
+            <label>Features</label>
+            <input type="text" name="features" required><br>
+
+            <label>Aantal personen</label>
+            <input type="number" name="reispersonen" min="1" max="8" required><br>
 
             <div class="form-actions">
                 <button type="submit" name="toevoegen" class="add-button">Toevoegen</button>

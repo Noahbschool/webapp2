@@ -26,7 +26,7 @@ include("./dbcalls/conn.php");
     <main>
         <section class="landingspagina">
 
-            <form action="" method="post" class="search-box">
+            <form action="pages/reizen.php" method="post" class="search-box">
                 <h2>Jouw vakantie</h2>
                 <label for="aantal-personen">Aantal personen</label>
                 <input type="number" name="aantal-personen" id="aantal-personen" placeholder="Aantal personen" min="1"
