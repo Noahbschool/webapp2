@@ -1,3 +1,6 @@
+<?php
+include('../dbcalls/login/read.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +12,19 @@
 </head>
 
 <body>
-
     <header>
         <a href="../index.php"><img class="logo" src="../assets/img/n-reizen-logo.png" alt="logo"></a>
         <nav class="header-buttons">
             <ul>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="login-register.php">Log in</a></li>
+                <?php if (!isset($_SESSION['userrole'])) { ?>
+                    <li><a href="../pages/login-register.php">Log in</a></li>
+                <?php } elseif ($_SESSION['userrole'] == 'admin') { ?>
+                    <li><a href="../pages/admin-pannel.php">Admin panel</a></li>
+                    <li><a href="../dbcalls/login/logout.php">Log out</a></li>
+                <?php } else { ?>
+                    <li><a href="../dbcalls/login/logout.php">Log out</a></li>
+                <?php } ?>
             </ul>
         </nav>
     </header>
