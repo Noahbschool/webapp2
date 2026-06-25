@@ -15,8 +15,10 @@ $user = $stmt->fetch();
 
 if ($user){
    if ($user['userrole'] == 'admin' && $user['userpassword'] == $userpassword) {
+    $_SESSION['userrole'] = $user['userrole'];
     header('location: ../../pages/admin-pannel.php');
 } else if ($user['userrole'] == 'klant' && $user['userpassword'] == $userpassword) {
+    $_SESSION['userrole'] = $user['userrole'];
     header('location: ../../index.php');
 } else {
     echo 'Wrong user details';
