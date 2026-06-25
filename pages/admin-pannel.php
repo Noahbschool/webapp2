@@ -1,5 +1,6 @@
 <?php
 include('../dbcalls/login/read.php');
+include('../dbcalls/reizen/read.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,85 +42,26 @@ include('../dbcalls/login/read.php');
         <a href="recenties.php">Recenties bekijken</a>
     </div>
 
-
-
-
     <div class="card-container">
 
+    <?php foreach ($reizen as $reis) { ?>
         <div class="reis-card">
+            <p><?php echo $reis["reisnaam"]; ?></p>
+            <p>€ <?php echo $reis["reisprijs"]; ?></p>
 
-            <img src="/assets/img/placeholder-300x300.png" class="card-img" alt="hotel">
+            <form action="reizen-edit.php" method="get">
+                <input type="hidden" name="reisid" value="<?php echo $reis["reisid"]; ?>">
+                <input type="submit" value="Bewerken">
+            </form>
 
-            <div class="card-info">
-
-                <div class="card-title">Boutique Hotel Herman K ⭐⭐⭐⭐⭐</div>
-
-                <div class="card-text">1 nacht • 2 volwassenen</div>
-
-                <div class="card-price">€ 391</div>
-
-                <div class="card-small">inclusief belastingen en toeslagen</div>
-
-                <div class="card-buttons">
-                    <a href="view.php" class="button-view">Bekijken</a>
-                    <a href="edit.php" class="button-edit">Bewerken</a>
-                    <a href="delete.php" class="button-delete">Verwijderen</a>
-                </div>
-
-            </div>
-
+            <form action="../dbcalls/reizen/delete.php" method="post">
+                <input type="hidden" name="reisid" value="<?php echo $reis["reisid"]; ?>">
+                <input type="submit" value="Verwijderen">
+            </form>
         </div>
+    <?php } ?>
 
-
-        <div class="reis-card">
-
-            <img src="/assets/img/placeholder-300x300.png" class="card-img" alt="hotel">
-
-            <div class="card-info">
-
-                <div class="card-title">Boutique Hotel Herman K ⭐⭐⭐⭐⭐</div>
-
-                <div class="card-text">1 nacht • 2 volwassenen</div>
-
-                <div class="card-price">€ 250</div>
-
-                <div class="card-small">inclusief belastingen en toeslagen</div>
-
-                <div class="card-buttons">
-                    <a href="view.php" class="button-view">Bekijken</a>
-                    <a href="edit.php" class="button-edit">Bewerken</a>
-                    <a href="delete.php" class="button-delete">Verwijderen</a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="reis-card">
-
-            <img src="/assets/img/placeholder-300x300.png" class="card-img" alt="hotel">
-
-            <div class="card-info">
-
-                <div class="card-title">Boutique Hotel Herman K ⭐⭐⭐⭐⭐</div>
-
-                <div class="card-text">1 nacht • 2 volwassenen</div>
-
-                <div class="card-price">€ 150</div>
-
-                <div class="card-small">inclusief belastingen en toeslagen</div>
-
-                <div class="card-buttons">
-                    <a href="view.php" class="button-view">Bekijken</a>
-                    <a href="edit.php" class="button-edit">Bewerken</a>
-                    <a href="delete.php" class="button-delete">Verwijderen</a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 
 </body>
